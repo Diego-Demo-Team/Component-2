@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Component-2
+  description: Test component
+  annotations:
+    github.com/project-slug: diegos-demo-team/Component-2
+    github.com/team-slug: diegos-demo-team/test-team-2
+spec:
+  type: service
+  lifecycle: production
+  owner: test-team-2
+  dependsOn:
+    - component:Component-3
